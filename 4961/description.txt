@@ -1,0 +1,31 @@
+Problem Description
+Number theory is interesting, while this problem is boring.
+
+Here is the problem. Given an integer sequence a1, a2, …, an, let S(i) = {j|1<=j<i, and aj is a multiple of ai}. If S(i) is not empty, let f(i) be the maximum integer in S(i); otherwise, f(i) = i. Now we define bi as af(i). Similarly, let T(i) = {j|i<j<=n, and aj is a multiple of ai}. If T(i) is not empty, let g(i) be the minimum integer in T(i); otherwise, g(i) = i. Now we define ci as ag(i). The boring sum of this sequence is defined as b1 * c1 + b2 * c2 + … + bn * cn.
+
+Given an integer sequence, your task is to calculate its boring sum.
+ 
+
+Input
+The input contains multiple test cases.
+
+Each case consists of two lines. The first line contains an integer n (1<=n<=100000). The second line contains n integers a1, a2, …, an (1<= ai<=100000).
+
+The input is terminated by n = 0.
+ 
+
+Output
+Output the answer in a line.
+ 
+
+Sample Input
+5
+1 4 2 3 9
+0
+ 
+
+Sample Output
+136
+
+Hint
+In the sample, b1=1, c1=4, b2=4, c2=4, b3=4, c3=2, b4=3, c4=9, b5=9, c5=9, so b1 * c1 + b2 * c2 + … + b5 * c5 = 136.
